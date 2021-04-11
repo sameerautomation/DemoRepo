@@ -1,3 +1,5 @@
+//author sameer
+
 package com.streams.testcases;
 
 import java.io.IOException;
@@ -15,7 +17,7 @@ import com.streams.utilities.TestUtil;
 
 public class SignInPageTest extends BasePage
 {
-	HomePage homepage;
+	HomePage homepage; 
 	SignInPage signinpage;
 	TestUtil xlutils;
 
