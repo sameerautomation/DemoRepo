@@ -5,7 +5,7 @@
     <classes>
       <class name="com.streams.testcases.SignInPageTest">
         <methods>
-          <include name="StreamsLoginTest"/>
+          <include name="logintest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

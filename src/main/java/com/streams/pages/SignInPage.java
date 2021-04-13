@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.streams.basepage.BasePage;
 
-public class SignInPage extends BasePage 
+public class SignInPage extends BasePage
 {
 
 	//PageFactory or Object Repository

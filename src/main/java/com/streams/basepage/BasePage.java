@@ -15,7 +15,7 @@ public class BasePage
 
 	public  static WebDriver driver;
 	public static Properties prop;
-	public static FileInputStream fip;
+	public static FileInputStream fis;
 
 
 	/*	public BasePage()
@@ -42,9 +42,9 @@ public class BasePage
 
 		try 
 		{
-			fip = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\com\\streams\\configurations\\config.properties");
+			fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\com\\streams\\configurations\\config.properties");
 			prop=new Properties();
-			prop.load(fip);
+			prop.load(fis);
 		} catch (FileNotFoundException e) 
 		{
 			e.printStackTrace();
