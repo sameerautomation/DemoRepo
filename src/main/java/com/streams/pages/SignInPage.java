@@ -39,7 +39,7 @@ public class SignInPage extends BasePage
 	}
 	
 	
-	public HomePage login(String uname, String pwd) 
+	public HomePage login(String uname, String pwd, String inputdata, String expected) 
 	{
 		username.sendKeys(uname);
 		password.sendKeys(pwd);

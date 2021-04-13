@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58471" started-at="2021-04-13T12:08:03 IST" finished-at="2021-04-13T12:09:02 IST">
+  <suite name="Default suite" duration-ms="74894" started-at="2021-04-13T14:36:45 IST" finished-at="2021-04-13T14:38:00 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58471" started-at="2021-04-13T12:08:03 IST" finished-at="2021-04-13T12:09:02 IST">
+    <test name="Default test" duration-ms="74894" started-at="2021-04-13T14:36:45 IST" finished-at="2021-04-13T14:38:00 IST">
       <class name="com.streams.testcases.SignInPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="setUp" is-config="true" duration-ms="14177" started-at="2021-04-13T12:08:03 IST" finished-at="2021-04-13T12:08:17 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="setUp" is-config="true" duration-ms="10973" started-at="2021-04-13T14:36:45 IST" finished-at="2021-04-13T14:36:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateSignInPageUrlTest()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="validateSignInPageUrlTest" duration-ms="81" started-at="2021-04-13T12:08:17 IST" finished-at="2021-04-13T12:08:17 IST">
+        <test-method status="PASS" signature="validateSignInPageUrlTest()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="validateSignInPageUrlTest" duration-ms="37" started-at="2021-04-13T14:36:56 IST" finished-at="2021-04-13T14:36:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSignInPageUrlTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="tearDown" is-config="true" duration-ms="1365" started-at="2021-04-13T12:08:17 IST" finished-at="2021-04-13T12:08:19 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="tearDown" is-config="true" duration-ms="1202" started-at="2021-04-13T14:36:56 IST" finished-at="2021-04-13T14:36:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="setUp" is-config="true" duration-ms="7804" started-at="2021-04-13T12:08:21 IST" finished-at="2021-04-13T12:08:28 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="setUp" is-config="true" duration-ms="7312" started-at="2021-04-13T14:37:00 IST" finished-at="2021-04-13T14:37:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="logintest" duration-ms="11812" started-at="2021-04-13T12:08:28 IST" data-provider="getData" finished-at="2021-04-13T12:08:40 IST">
+        <test-method status="PASS" signature="logintest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="logintest" duration-ms="17167" started-at="2021-04-13T14:37:08 IST" data-provider="getData" finished-at="2021-04-13T14:37:25 IST">
           <params>
             <param index="0">
               <value>
@@ -35,23 +35,67 @@
                 <![CDATA[abc@1234]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://streams.us/sloader/home.jsp]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="tearDown" is-config="true" duration-ms="1842" started-at="2021-04-13T12:08:40 IST" finished-at="2021-04-13T12:08:42 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="tearDown" is-config="true" duration-ms="1355" started-at="2021-04-13T14:37:25 IST" finished-at="2021-04-13T14:37:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="setUp" is-config="true" duration-ms="7872" started-at="2021-04-13T12:08:42 IST" finished-at="2021-04-13T12:08:50 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="setUp" is-config="true" duration-ms="7540" started-at="2021-04-13T14:37:26 IST" finished-at="2021-04-13T14:37:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="logintest" duration-ms="9811" started-at="2021-04-13T12:08:50 IST" data-provider="getData" finished-at="2021-04-13T12:09:00 IST">
+        <test-method status="PASS" signature="logintest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="logintest" duration-ms="963" started-at="2021-04-13T14:37:34 IST" data-provider="getData" finished-at="2021-04-13T14:37:35 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[sameertwo@accountvalidation]]>
+                <![CDATA[sameerone@accountvalidation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://accounts.unifiedcloudit.com/auth/SSOLogin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="tearDown" is-config="true" duration-ms="1614" started-at="2021-04-13T14:37:35 IST" finished-at="2021-04-13T14:37:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="setUp" is-config="true" duration-ms="9241" started-at="2021-04-13T14:37:36 IST" finished-at="2021-04-13T14:37:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logintest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="logintest" duration-ms="2324" started-at="2021-04-13T14:37:46 IST" data-provider="getData" finished-at="2021-04-13T14:37:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sameeronee@accountvalidation]]>
               </value>
             </param>
             <param index="1">
@@ -59,11 +103,55 @@
                 <![CDATA[abc@1234]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://accounts.wspbx.com/auth/index.jsp?dashboardid=302922967&src=streams.us&svid=10]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="tearDown" is-config="true" duration-ms="1884" started-at="2021-04-13T12:09:00 IST" finished-at="2021-04-13T12:09:02 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="tearDown" is-config="true" duration-ms="1220" started-at="2021-04-13T14:37:48 IST" finished-at="2021-04-13T14:37:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="setUp" is-config="true" duration-ms="7292" started-at="2021-04-13T14:37:49 IST" finished-at="2021-04-13T14:37:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logintest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="logintest" duration-ms="2377" started-at="2021-04-13T14:37:56 IST" data-provider="getData" finished-at="2021-04-13T14:37:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sameeronee@accountvalidation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://accounts.wspbx.com/auth/index.jsp?dashboardid=302922967&src=streams.us&svid=10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.streams.testcases.SignInPageTest@66d1af89]" name="tearDown" is-config="true" duration-ms="1217" started-at="2021-04-13T14:37:59 IST" finished-at="2021-04-13T14:38:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

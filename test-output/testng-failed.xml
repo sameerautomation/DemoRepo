@@ -5,7 +5,7 @@
     <classes>
       <class name="com.streams.testcases.SignInPageTest">
         <methods>
-          <include name="logintest"/>
+          <include name="logintest" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
