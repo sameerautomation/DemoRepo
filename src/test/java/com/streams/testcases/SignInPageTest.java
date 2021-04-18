@@ -22,12 +22,13 @@ public class SignInPageTest extends BasePage
 	SignInPage signinpage;
 	TestUtil xlutility;
 
+	
 
-
-	/*public SignInPageTest()
+	public SignInPageTest()
 	{
 		super();
-	}*/
+	}
+
 
 
 	@BeforeMethod

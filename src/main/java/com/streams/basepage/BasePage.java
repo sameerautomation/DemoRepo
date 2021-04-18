@@ -18,14 +18,14 @@ public class BasePage
 	public static FileInputStream fis;
 
 
-	/*	public BasePage()
+		public BasePage()
 	{
 
 		try 
 		{
-			FileInputStream fip=new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\com\\streams\\configurations\\config.properties");
+			FileInputStream fis=new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\com\\streams\\configurations\\config.properties");
 		    prop=new Properties();
-			prop.load(fip);		
+			prop.load(fis);		
 		} 
 		catch (FileNotFoundException e) 
 		{
@@ -35,24 +35,11 @@ public class BasePage
 		{
 			e.printStackTrace();
 		}
-	}*/
+	}
 
+		
 	public static void launchBrowser() 
-	{
-
-		try 
-		{
-			fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\com\\streams\\configurations\\config.properties");
-			prop=new Properties();
-			prop.load(fis);
-		} catch (FileNotFoundException e) 
-		{
-			e.printStackTrace();
-		}
-		catch (IOException e) {
-
-			e.printStackTrace();
-		}	
+	{	
 		
 		String browsername=prop.getProperty("browser");
 		if(browsername.equals("chrome"))
