@@ -4,7 +4,8 @@ package com.streams.testcases;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,42 +19,41 @@ import com.streams.utilities.TestUtil;
 
 public class SignInPageTest extends BasePage
 {
+	public static Logger log =LogManager.getLogger(SignInPageTest.class.getName());
+	
 	HomePage homepage; 
 	SignInPage signinpage;
 	TestUtil xlutility;
 
 	
-
-	public SignInPageTest()
-	{
-		super();
-	}
-
-
-
 	@BeforeMethod
 	public void setUp()
 	{
-		launchBrowser();
-		signinpage= new SignInPage();
+		driver=launchBrowser();
+		log.info("browser launched sucessfully");
 	}
 
 
-
-	@Test(priority=0)
+	@Test(priority=1)
 	public void validateSignInPageUrlTest()
 	{
+		signinpage= new SignInPage(driver);
 		String actualurl=signinpage.validateSignInPageUrl();
-		Assert.assertEquals(actualurl, "https://accounts.unifiedcloudit.com/auth/?dashboardid=302922967&svid=10&src=streams.us&se=true");
+		Assert.assertTrue(actualurl.contains("https://accounts.unifiedcloudit.com/auth/"));
+		log.info("Sucssfully validated the text message");
 	}	
 
 
 
-	@Test(priority=1, dataProvider="getData")
-	public void logintest(String uname, String pwd, String inputdata, String expected)
-	{
+	@Test(priority=2, dataProvider="getData")
+	public void logintest(String uname, String pwd, String inputdata, String expected) throws InterruptedException
+	{	
+		signinpage= new SignInPage(driver);
 		homepage=signinpage.login(uname, pwd, inputdata, expected);
 		String actualurl=homepage.getHomePageUrl();
+		
+		log.info("captured the hompage url" + actualurl );
+			
 		if(inputdata.equals("valid"))
 		{
 			if(expected.equals(actualurl))
@@ -114,13 +114,14 @@ public class SignInPageTest extends BasePage
 		return loginData;
 	}
 
-
-
+	
 
 	@AfterMethod
 	public void tearDown()
 	{
 		driver.quit();
+		log.info("browser closed sucessfully");
+		
 	}
 
 
