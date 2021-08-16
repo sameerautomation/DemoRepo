@@ -56,7 +56,7 @@ public class SignInPageTest extends BasePage
 			
 		if(inputdata.equals("valid"))
 		{
-			if(expected.equals(actualurl))
+			if(actualurl.contains(expected))
 			{
 				homepage.clickOnThreeBarMenu();
 				homepage.clickOnLogOutButton();
@@ -70,7 +70,7 @@ public class SignInPageTest extends BasePage
 		}
 		else if(inputdata.equals("invalid"))
 		{
-			if(expected.equals(actualurl))
+			if(actualurl.contains(expected))
 			{
 				Assert.assertTrue(true);
 			}

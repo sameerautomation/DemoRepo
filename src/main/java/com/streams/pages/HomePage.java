@@ -49,8 +49,12 @@ public class HomePage
 	@FindBy(xpath="//input[@value='Create']")
 	WebElement create;
 	
-	@FindBy(id="webdrive_loading")
+	/*@FindBy(id="webdrive_loading")
+	WebElement loadericon;*/
+	
+	@FindBy(xpath="//div[@id='spanel_3']/div")
 	WebElement loadericon;
+	
 	
 	@FindBy(xpath="//span[@class='SBFileName textLimit spaceToLeftForListView']")
 	List<WebElement> folderslist;
@@ -79,29 +83,20 @@ public class HomePage
 	public String createFolder() throws InterruptedException
 	{
 		smartboxicon.click();	
-	    Sync.visibilityOf(driver, 20, loadericon);
-	    Sync.invisibilityOf(driver, 20, loadericon);
+	    Sync.visibilityOf(driver, 30, loadericon);
+	    Sync.invisibilityOf(driver, 40, loadericon);
 		String foldername = "fan" + System.currentTimeMillis();
 		createnewfolder.click();
 		foldernametextbox.sendKeys(foldername);
 		create.click();
 		Thread.sleep(60000);
 		System.out.println("returning the list");
-		return folderslist.get(0).getText();
-		
+		return folderslist.get(0).getText();		
 		
 	}
 	
-	public boolean resultValidation() throws InterruptedException {
-		if(createFolder().contains("fan"))
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
+	
+	
 	
 
 }

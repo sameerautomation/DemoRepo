@@ -33,8 +33,7 @@ public class HomePageTest extends BasePage
 	public void createFolder() throws InterruptedException
 	{
 		signinpage= new SignInPage(driver);
-		signinpage.login("sameerone@accountvalidation", "abc@1234", "valid", "https://streams.us/sloader/home.jsp");
-		homepage= new HomePage(driver);
+		homepage=signinpage.login("sam@accountvalidation", "abc@1234", "valid", "https://streams.us/sloader/home.jsp");
 		String flag=homepage.createFolder();
 		if(flag.contains("fan"))
 		{
